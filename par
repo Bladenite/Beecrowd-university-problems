@@ -1,0 +1,22 @@
+contador = 0
+
+while True:
+    N = int(input())
+    if N == 0:
+        break
+    player1 = input()
+    player2 = input()
+    soma = []
+
+    for i in range(N):
+        a, b = list(map(int, input().split()))
+        soma.append(a+b)
+
+    contador += 1
+    print("Teste", contador)
+    for i in range(N):
+        if soma[i] % 2 == 0:
+            print(player1)
+        else:
+            print(player2)
+    print()
